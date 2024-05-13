@@ -1,6 +1,6 @@
-/*export function imprimir(algo){
+export function imprimir(algo){
     console.log(algo)
-}*/
+}
 
 
 //Optional Chaining

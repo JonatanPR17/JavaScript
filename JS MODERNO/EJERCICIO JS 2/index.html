@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabla de Clientes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+  <div class="container mx-auto p-4">
+    <h1 class="text-3xl font-bold mb-6 text-center">Lista de Clientes</h1>
+
+    <!-- Tabla principal de clientes -->
+    <div class="overflow-x-auto mb-8">
+      <table id="tablaClientes" class="w-full table-auto bg-white shadow-md rounded">
+        <thead class="bg-gray-800 text-white">
+          <tr>
+            <th class="py-3 px-4">Nombre</th>
+            <th class="py-3 px-4">Apellido</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-200">
+          <!-- Aquí se llenarán dinámicamente los clientes -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Botón para activar el buscador -->
+    <div class="text-center">
+      <button id="buscarBtn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded mb-4">Buscar</button>
+    </div>
+
+    <!-- Contenedor de búsqueda -->
+    <div id="contenedorBusqueda" class="hidden">
+      <div class="mb-4">
+        <!-- Campo de búsqueda -->
+        <input id="buscarInput" type="text" class="border border-gray-300 focus:border-blue-500 rounded-lg px-4 py-2 w-full" placeholder="Buscar por nombre o apellido">
+      </div>
+
+      <!-- Tabla de resultados de búsqueda -->
+      <div class="overflow-x-auto">
+        <table id="tablaResultadoBusqueda" class="w-full table-auto bg-green-200 shadow-md rounded">
+          <thead class="bg-green-500 text-white">
+            <tr>
+              <th class="py-3 px-4">Nombre</th>
+              <th class="py-3 px-4">Apellido</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-green-300">
+            <!-- Aquí se llenarán dinámicamente los resultados de búsqueda -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Script de JavaScript -->
+    <script src="script.js"></script>
+  </div>
+</body>
+</html>
