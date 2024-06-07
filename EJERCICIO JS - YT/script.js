@@ -165,3 +165,22 @@ function ejercicioNueve(open = "", close = ""){
 }
 
 ejercicioNueve('Wed May 15 2024 13:00:00' , 'Wed May 15 2024 13:55:00');
+
+/*En un arreglo tenemos varios valores numéricos, debemos de hacer una función que nos
+/elimine aquellos valores que se encuentran repetidos.*/
+
+function ejercicioDiez(){
+    const nums = [1,2,3,4,5,6,4,2,3];
+    let result = nums.filter((item, index)=>{
+        return nums.indexOf(item) === index
+    })
+    console.log(`Arreglo original: ${nums}`);
+    console.log(result)
+    //Segnda form
+    let newNums = new Set(nums);
+    console.log(newNums)
+    let result2 = [...arguments, ...newNums];
+    console.log(result2);
+}
+
+ejercicioDiez();
