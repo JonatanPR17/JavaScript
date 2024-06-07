@@ -31,9 +31,9 @@ function saludar2(){
     return "Hola mundo"
 }
 
-let resdultadOFuncion = saludar2()
+let resultadoFuncion = saludar2()
 
-console.log(resdultadOFuncion)
+console.log(resultadoFuncion)
 
 /////////////////////////////////////////////////////////////
 function saludar3(){
@@ -104,8 +104,9 @@ console.log(pepito.apellidoPepito)
 /*DOM - DOCUMENT OBJECT MODEL --- ES UN API*/
 /*DOM --- OBJETO -> CLAVE Y VALOR
     TIENE MULTIPLIES ATRIBUTOS DONDE ACCEDER
-    "TODO NODO ES ELEMENTO, PERO TODO ELEMENTO ES UN NODO"
+    "TODO NODO ES ELEMENTO, PERO NO TODO ELEMENTO ES UN NODO"
     NODO --> ES TODO LO QUE ESTA EN EL CODIGO HTML
     ELEMENTO --> SOLO LAS ETIQUETAS HTML
     */
+   
 console.log(document)
